@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Colors */
+    --clr-White: #FFFFFF;
+    --clr-Monsoon: #838391;
+    --clr-Ebony: #070724;
+    --clr-Pelorous: #419EBB;
+    --clr-Shamrock: #1ec1a2;
+    --clr-Royal-Blue: #2d68f0;
+    --clr-Martinique: #38384f;
+    --clr-Purple-Heart: #6d2ed5;
+    --clr-Orange-Roughy: #cd5120;
+    --clr-Valencia: #D14C32;
+    --clr-Punch: #d83a34;
+    --clr-Iron: #d8d8d8;
+    --clr-Tan-Hide: #eda249;
+    /* Font Family */
+    --ff-primary: 'Antonio', sans-serif;
+    --ff-secondary: 'League Spartan', sans-serif;
+    /* Font Weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+    /* Font Size */
+    --fs-text-xxx: 0.5625rem;
+    --fs-text-xxs: 0.6875rem;
+    --fs-text-xs: 0.75rem;
+    --fs-text-sm: 0.875rem;
+    --fs-text-base: 0.9375rem;
+    --fs-text-2xl: 1.5rem;
+    --fs-text-3xl: 1.75rem;
+    --fs-text-4xl: 2.5rem;
+    --fs-text-5xl: 3rem;
+    --fs-text-7xl: 5rem;
+    /* Letter Spacing */
+    --ls-tracking-more-tighter: -0.0625rem;
+    --ls-tracking-tighter: -0.09375rem;
+    --ls-tracking-tight: 0.0625rem;
+    --ls-tracking-wide: 0.08525rem;
+    --ls-tracking-wider: 0.12056rem;
+    --ls-tracking-widest: 0.16069rem;
+    /* Line Hight */
+    --lh-leading-none: 1rem;
+    --lh-leading-snug: 1.375rem;
+    --lh-leading-6: 1.5625rem;
+    --lh-leading-normal: 1.5:
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    background-color: #070724;
+    background-image: url(/public/images/background-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
