@@ -57,6 +57,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    width: min(95%, 90rem);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -69,6 +70,13 @@ body {
     background-size: cover;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* Make images easier to work with */
 img,
@@ -77,49 +85,38 @@ picture {
     display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
 
 .header-wrapper {
     /* width: min(95%, 90rem); */
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--clr-White);
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.header-wrapper a {
+.nav-links {
     text-transform: uppercase;
     letter-spacing: 0.0625rem;
     color: var(--clr-White);
 }
 
 .logo-home-link {
+    color: var(--clr-White);
     font-family: var(--ff-primary);
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.list-wrapper {
+    display: flex;
+    gap: 2rem;
 }
 
 .nav-links {
@@ -140,6 +137,18 @@ select {
     place-content: center;
     color: var(--clr-White);
 }
+
+.planet-img-wrapper {
+    align-self: center;
+}
+
+.information-wrapper,
+.information-intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 
 .information-main-heading {
     font-family: var(--ff-primary);

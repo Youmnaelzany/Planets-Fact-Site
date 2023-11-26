@@ -1,18 +1,10 @@
----
-import "@/styles/globals.css";
----
-
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/public/images/favicon-32x32.png"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Planets fact site</title>
+    <link rel="stylesheet" href="../styles/globals.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,13 +14,13 @@ import "@/styles/globals.css";
     />
   </head>
   <body>
-    <header class="header-wrapper flex justify-between px-8 my-6 items-center">
+    <header class="header-wrapper">
       <div class="logo-wrapper">
-        <a class="logo-home-link" href="../pages/index.astro">THE PLANETS</a>
+        <a class="logo-home-link" href="../pages/index.html">THE PLANETS</a>
       </div>
       <nav class="nav-wrapper">
-        <ul class="list-wrapper flex gap-8">
-          <li><a class="nav-links" href="./index.astro">mercury</a></li>
+        <ul class="list-wrapper">
+          <li><a class="nav-links" href="./index.html">mercury</a></li>
           <li><a class="nav-links" href="./venus.astro">venus</a></li>
           <li><a class="nav-links" href="./earth.astro">earth</a></li>
           <li><a class="nav-links" href="./mars.astro">mars</a></li>
@@ -41,11 +33,14 @@ import "@/styles/globals.css";
     </header>
     <main>
       <section class="planet-information-section">
-        <div class="planet-img-wrapper self-center">
-          <img src="/images/planet-mercury.svg" alt="planet-mercury" />
+        <div class="planet-img-wrapper">
+          <img
+            src="../../public/images/planet-mercury.svg"
+            alt="planet-mercury"
+          />
         </div>
-        <div class="information-wrapper flex flex-col gap-8">
-          <div class="information-intro-wrapper flex flex-col gap-8">
+        <div class="information-wrapper">
+          <div class="information-intro-wrapper">
             <h1 class="information-main-heading">Mercury</h1>
             <p class="information-main-paragraph">
               Mercury is the smallest planet in the Solar System and the closest
@@ -54,12 +49,7 @@ import "@/styles/globals.css";
               terrestrial planets in the Solar System, and is a rocky body like
               Earth.
             </p>
-            <div
-              class="wikipedia-link-source-wrapper
-          flex
-          items-center
-          gap-2"
-            >
+            <div class="wikipedia-link-source-wrapper flex items-center gap-2">
               <p class="wikipedia-source-title">Source :</p>
               <a
                 class="wikipedia-link"
