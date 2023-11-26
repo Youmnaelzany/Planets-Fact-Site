@@ -20,37 +20,6 @@
     /* Font Family */
     --ff-primary: 'Antonio', sans-serif;
     --ff-secondary: 'League Spartan', sans-serif;
-    /* Font Weight */
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-    --fw-800: 800;
-    --fw-900: 900;
-    /* Font Size */
-    --fs-text-xxx: 0.5625rem;
-    --fs-text-xxs: 0.6875rem;
-    --fs-text-xs: 0.75rem;
-    --fs-text-sm: 0.875rem;
-    --fs-text-base: 0.9375rem;
-    --fs-text-2xl: 1.5rem;
-    --fs-text-3xl: 1.75rem;
-    --fs-text-4xl: 2.5rem;
-    --fs-text-5xl: 3rem;
-    --fs-text-7xl: 5rem;
-    /* Letter Spacing */
-    --ls-tracking-more-tighter: -0.0625rem;
-    --ls-tracking-tighter: -0.09375rem;
-    --ls-tracking-tight: 0.0625rem;
-    --ls-tracking-wide: 0.08525rem;
-    --ls-tracking-wider: 0.12056rem;
-    --ls-tracking-widest: 0.16069rem;
-    /* Line Hight */
-    --lh-leading-none: 1rem;
-    --lh-leading-snug: 1.375rem;
-    --lh-leading-6: 1.5625rem;
-    --lh-leading-normal: 1.5:
 }
 
 
@@ -95,15 +64,11 @@ body {
     font-size: 1.125rem;
     line-height: 1.5;
     background-color: #070724;
-    background-image: url(/public/images/background-stars.svg);
+    background-image: url(/images/background-stars.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
 
 /* Make images easier to work with */
 img,

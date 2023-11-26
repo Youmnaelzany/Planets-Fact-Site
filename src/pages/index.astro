@@ -1,4 +1,6 @@
 ---
+import MercuryOverview from "@/components/MercuryOverview.astro";
+import HeaderMenu from "@/components/HeaderMenu.astro";
 import "@/styles/globals.css";
 ---
 
@@ -21,5 +23,9 @@ import "@/styles/globals.css";
       rel="stylesheet"
     />
   </head>
-  <body> </body>
+  <body>
+    <!-- Page Header -->
+    <HeaderMenu />
+    <MercuryOverview />
+  </body>
 </html>
