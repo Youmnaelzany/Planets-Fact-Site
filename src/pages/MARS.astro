@@ -1,5 +1,4 @@
 ---
-import HeaderMenu from "@/components/HeaderMenu.astro";
 import "@/styles/globals.css";
 ---
 
@@ -23,6 +22,100 @@ import "@/styles/globals.css";
     />
   </head>
   <body>
-    <HeaderMenu />
+    <header class="header-wrapper flex justify-between px-8 my-6 items-center">
+      <div class="logo-wrapper">
+        <a class="logo-home-link" href="../pages/index.astro">THE PLANETS</a>
+      </div>
+      <nav class="nav-wrapper">
+        <ul class="list-wrapper flex gap-8">
+          <li><a class="nav-links" href="./index.astro">mercury</a></li>
+          <li><a class="nav-links" href="./venus.astro">venus</a></li>
+          <li><a class="nav-links" href="./earth.astro">earth</a></li>
+          <li><a class="nav-links" href="./mars.astro">mars</a></li>
+          <li><a class="nav-links" href="./jupiter.astro">jupiter</a></li>
+          <li><a class="nav-links" href="./saturn.astro">saturn</a></li>
+          <li><a class="nav-links" href="./uranus.astro">uranus</a></li>
+          <li><a class="nav-links" href="./neptune.astro">neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="planet-information-section">
+        <div class="planet-img-wrapper self-center">
+          <img src="/images/planet-mars.svg" alt="planet-mercury" />
+        </div>
+        <div class="information-wrapper flex flex-col gap-8">
+          <div class="information-intro-wrapper flex flex-col gap-8">
+            <h1 class="information-main-heading">Mars</h1>
+            <p class="information-main-paragraph">
+              Mars is the fourth planet from the Sun and the second-smallest
+              planet in the Solar System, being larger than only Mercury. In
+              English, Mars carries the name of the Roman god of war and is
+              often referred to as the "Red Planet".
+            </p>
+            <div
+              class="wikipedia-link-source-wrapper
+          flex
+          items-center
+          gap-2"
+            >
+              <p class="wikipedia-source-title">Source :</p>
+              <a
+                class="wikipedia-link"
+                href="https://en.wikipedia.org/wiki/Mars">Wikipedia</a
+              >
+              <div class="wikipedia-arrow-link">
+                <img
+                  class="wikipedia-link-"
+                  src="/images/icon-source.svg"
+                  alt="icon-source"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="more-inforamtion-pages">
+            <ul class="more-inforamtion-pages-list-wrapper">
+              <div class="more-inforamtion-pages-link-wrapper">
+                <p class="page-number">01</p>
+                <li class="page-link">
+                  <a class="page-link" href="#">OVERVIEW</a>
+                </li>
+              </div>
+              <div class="more-inforamtion-pages-link-wrapper">
+                <p class="page-number">02</p>
+                <li class="page-link">
+                  <a class="page-link" href="">Internal Structure</a>
+                </li>
+              </div>
+              <div class="more-inforamtion-pages-link-wrapper">
+                <p class="page-number">03</p>
+                <li class="page-link">
+                  <a class="page-link" href="">Surface Geology</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="accurate-numbers-section mb-16">
+        <div class="number-box">
+          <h2 class="accurate-numbers-heading">Rotation Time</h2>
+          <p class="accurate-numbers-paragraph">1.03 Days</p>
+        </div>
+        <div class="number-box">
+          <h2 class="accurate-numbers-heading">Revolution Time</h2>
+          <p class="accurate-numbers-paragraph">1.88 Years</p>
+        </div>
+        <div class="number-box">
+          <h2 class="accurate-numbers-heading">Radius</h2>
+          <p class="accurate-numbers-paragraph">3,389.5 KM</p>
+        </div>
+        <div class="number-box">
+          <h2 class="accurate-numbers-heading">Average Temp.</h2>
+          <p class="accurate-numbers-paragraph">-28°c</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
