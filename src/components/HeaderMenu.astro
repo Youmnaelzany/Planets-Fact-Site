@@ -3,36 +3,36 @@ import "@/styles/globals.css";
 ---
 
 <header class="header-wrapper flex justify-between px-8 my-6 items-center">
-  <div class="logo">
-    <a href="../pages/index.astro">THE PLANETS</a>
+  <div class="logo-wrapper">
+    <a class="logo-home-link" href="../pages/index.astro">THE PLANETS</a>
   </div>
   <nav class="nav-wrapper">
     <ul class="list-wrapper flex gap-8">
-      <li><a href="../pages/index.astro">mercury</a></li>
-      <li><a href="../pages/VENUS.astro">venus</a></li>
-      <li><a href="../pages/EARTH.astro">earth</a></li>
-      <li><a href="../pages/MARS.astro">mars</a></li>
-      <li><a href="../pages/jupiter.astro">jupiter</a></li>
-      <li><a href="../pages/saturn.astro">saturn</a></li>
-      <li><a href="../pages/Uranus.astro">uranus</a></li>
-      <li><a href="../pages/Neptune.astro">neptune</a></li>
+      <li><a class="nav-links" href="index.astro">mercury</a></li>
+      <li><a class="nav-links" href="/venus.astro">venus</a></li>
+      <li><a class="nav-links" href="/earth.astro">earth</a></li>
+      <li><a class="nav-links" href="/mars.astro">mars</a></li>
+      <li><a class="nav-links" href="/jupiter.astro">jupiter</a></li>
+      <li><a class="nav-links" href="/saturn.astro">saturn</a></li>
+      <li><a class="nav-links" href="/uranus.astro">uranus</a></li>
+      <li><a class="nav-links" href="/neptune.astro">neptune</a></li>
     </ul>
   </nav>
 </header>
 
 <style>
-  header {
+  .header-wrapper {
     /* width: min(95%, 90rem); */
     color: var(--clr-White);
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  a {
+  .header-wrapper a {
     text-transform: uppercase;
     letter-spacing: 0.0625rem;
     color: var(--clr-White);
   }
-  .logo a {
+  .logo-home-link {
     font-family: var(--ff-primary);
     font-size: 1.75rem;
     font-style: normal;
@@ -40,7 +40,7 @@ import "@/styles/globals.css";
     line-height: normal;
   }
 
-  nav ul li a {
+  .nav-links {
     font-family: var(--ff-secondary);
     font-size: 0.6875rem;
     font-style: normal;

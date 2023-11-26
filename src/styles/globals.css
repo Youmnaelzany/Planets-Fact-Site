@@ -100,3 +100,159 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
+.header-wrapper {
+    /* width: min(95%, 90rem); */
+    color: var(--clr-White);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-wrapper a {
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    color: var(--clr-White);
+}
+
+.logo-home-link {
+    font-family: var(--ff-primary);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-links {
+    font-family: var(--ff-secondary);
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    /* 227.273% */
+}
+
+.planet-information-section {
+    width: min(95%, 70rem);
+    margin: 7rem auto;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 23rem);
+    place-content: center;
+    color: var(--clr-White);
+}
+
+.information-main-heading {
+    font-family: var(--ff-primary);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.information-main-paragraph {
+    font-family: var(--ff-seconadry);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    /* 178.571% */
+}
+
+.wikipedia-source-title {
+    font-family: var(--ff-seconadry);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    /* 178.571% */
+}
+
+.wikipedia-link {
+    font-family: var(--ff-seconadry);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    text-decoration-line: underline;
+    color: var(--clr-Monsoon);
+}
+
+.page-number {
+    color: var(--clr-Monsoon);
+    font-family: var(--ff-seconadry);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    /* 208.333% */
+    letter-spacing: 0.16069rem;
+}
+
+.more-inforamtion-pages-link-wrapper {
+    border: 1px solid var(--clr-Monsoon);
+    width: 21.875rem;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.more-inforamtion-pages-link-wrapper:hover {
+    background-color: var(--clr-Pelorous);
+    transition: all 0.2s;
+}
+
+.page-link {
+    font-family: var(--ff-seconadry);
+    color: var(--clr-White);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    /* 208.333% */
+    letter-spacing: 0.16069rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+/* Second Section */
+.accurate-numbers-section {
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.number-box {
+    border: 1px solid var(--clr-Monsoon);
+    width: 15.9375rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.accurate-numbers-heading {
+    font-family: var(--ff-secondary);
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    /* 227.273% */
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    color: var(--clr-Monsoon);
+}
+
+.accurate-numbers-paragraph {
+    color: var(--clr-White);
+    font-family: var(--ff-primary);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.09375rem;
+    text-transform: uppercase;
+}
